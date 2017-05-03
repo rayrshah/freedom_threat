@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<section class="home-intro">
+		<h1 class="logotype">{{ page.title }}</h1>
+
+		<div class="editorial-intro">
+			<h1 class="editorial-title">{{ page.title }}</h1>
+			<p class="intro-copy">{{ content }}</p>
+		</div>
+
+{% assign fti_value = page.current_index_level %}
+
+{% assign pointer = data.index.index_levels %}
+{{ pointer }}
+
+{{fti_value}}
+
+{% if fti_value > 0 and fti_value < 51 %}
+  {% assign current = 'fail' %}
+{% elsif fti_value >= 51  and fti_value < 300 %}
+  {% assign current = 'alarm' %}
+{% elsif fti_value >= 301  and fti_value < 600 %}
+  {% assign current = 'danger' %}
+{% elsif fti_value >= 601  and fti_value < 800 %}
+  {% assign current = 'caution' %}
+{% elsif fti_value >= 801  and fti_value <= 1000 %}
+  {% assign current = 'healthy' %}
+{% else %}
+ {% assign current = 'nada' %}
+{% endif %}
+
+{{current}}
+
+
+
+		<section class="freedom-index ">
+      {% for object in page.levels %}
+        {% if  object.name == current %}
+          <div class="index-level index-level-{{ object.name }}  index-level-current ">
+          {% else %}
+          <div class="index-level index-level-{{ object.name }}">
+        {% endif %}
+          <div class="">
+            <span>{{object.index_value}}</span>
+            <div class="index-group">
+              <h2>{{ object.name }}</h2>
+              <p>{{object.description}}</p>
+            </div>
+          </div>
+      </div>
+          {% endfor %}
+
+
+			<!-- NOTES for RAY:
+				- Change class to index-number-down when trending down, changes arrow and animation
+				- Could use the data-index-number for current number? I didn't do anything with it yet
+			 -->
+			<div class="index-number-current index-number-down " data-index-number="{{fti_value}}">
+				<div class="trending-tooltip">
+					<h2>The current number is {{fti_value}}.</h2>
+					<p>This is (up/down) (XX) points since (last week).</p>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+	</section>
+	<div class="scroll-arrow scroll-up">
+			navigateup
+		</div>
+
+	<div class="scroll-arrow scroll-down">
+			navigatedown
+		</div>

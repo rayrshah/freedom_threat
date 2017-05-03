@@ -1,0 +1,10 @@
+---
+---
+@import 'variables';
+
+.foo {
+  color: $color;
+}
+
+
+.clip:focus { clip: auto; }

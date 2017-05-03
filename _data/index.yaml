@@ -1,0 +1,75 @@
+index_levels:
+  - index: 1000
+    bottom: 92
+
+  - index: 950
+    bottom: 87
+
+  - index: 900
+    bottom: 85
+
+  - index: 850
+    bottom: 80
+
+  - index: 800
+    bottom: 74.5
+
+  - index: 750
+    bottom: 72
+
+  - index: 700
+    bottom: 66
+
+  - index: 650
+    bottom: 62
+
+  - index: 600
+    bottom: 57
+
+  - index: 550
+    bottom: 54
+
+  - index: 500
+    bottom: 51
+
+  - index: 450
+    bottom: 47
+
+  - index: 400
+    bottom: 45
+
+  - index: 350
+    bottom: 85
+
+  - index: 300
+    bottom: 38.5
+
+  - index: 250
+    bottom: 35
+
+  - index: 200
+    bottom: 32
+
+  - index: 150
+    bottom: 29
+
+  - index: 100
+    bottom: 26
+
+  - index: 50
+    bottom: 21
+
+  - index: 40
+    bottom: 17
+
+  - index: 30
+    bottom: 14
+
+  - index: 20
+    bottom: 10.5
+
+  - index: 10
+    bottom: 9
+
+  - index: 0
+    bottom: 5.5
