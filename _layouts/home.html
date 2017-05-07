@@ -11,26 +11,34 @@ layout: default
 
 {% assign fti_value = page.current_index_level %}
 
-{% assign pointer = data.index.index_levels %}
-{{ pointer }}
+<h6>FTI_VALUE: {{ fti_value }}</h6>
 
-{{fti_value}}
 
-{% if fti_value > 0 and fti_value < 51 %}
+{% if fti_value > 0 and fti_value < 50 %}
   {% assign current = 'fail' %}
-{% elsif fti_value >= 51  and fti_value < 300 %}
+	{% assign pointer = ((fti_value * 0.31)+ 5.5) %}
+	<h1 class="pointer">{{pointer}}</h1>
+{% elsif fti_value >= 50  and fti_value < 300 %}
   {% assign current = 'alarm' %}
-{% elsif fti_value >= 301  and fti_value < 600 %}
+	{% assign pointer = (((fti_value - 50) * 0.072)+ 21) %}
+	<h1 class="pointer">{{pointer}}</h1>
+{% elsif fti_value >= 300  and fti_value < 600 %}
   {% assign current = 'danger' %}
-{% elsif fti_value >= 601  and fti_value < 800 %}
+	{% assign pointer = (((fti_value - 300)* 0.05666)+ 39) %}
+	<h1 class="pointer">{{pointer}}</h1>
+{% elsif fti_value >= 600  and fti_value < 800 %}
   {% assign current = 'caution' %}
-{% elsif fti_value >= 801  and fti_value <= 1000 %}
+	{% assign pointer = (((fti_value - 600)* 0.09)+ 56) %}
+	<h1 class="pointer">{{pointer}}</h1>
+{% elsif fti_value >= 800  and fti_value <= 1000 %}
   {% assign current = 'healthy' %}
+	{% assign pointer = (((fti_value - 800) * 0.09)+ 77) %}
+	<h1 class="pointer">{{pointer}}</h1>
 {% else %}
  {% assign current = 'nada' %}
 {% endif %}
 
-{{current}}
+
 
 
 
@@ -38,6 +46,7 @@ layout: default
       {% for object in page.levels %}
         {% if  object.name == current %}
           <div class="index-level index-level-{{ object.name }}  index-level-current ">
+						<h1>{{pointer}}</h1>
           {% else %}
           <div class="index-level index-level-{{ object.name }}">
         {% endif %}
@@ -49,7 +58,7 @@ layout: default
             </div>
           </div>
       </div>
-          {% endfor %}
+      {% endfor %}
 
 
 			<!-- NOTES for RAY:
@@ -69,10 +78,3 @@ layout: default
 
 
 	</section>
-	<div class="scroll-arrow scroll-up">
-			navigateup
-		</div>
-
-	<div class="scroll-arrow scroll-down">
-			navigatedown
-		</div>
