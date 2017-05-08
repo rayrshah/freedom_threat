@@ -9,44 +9,32 @@ layout: default
 			<p class="intro-copy">{{ content }}</p>
 		</div>
 
-{% assign fti_value = page.current_index_level %}
 
-<h6>FTI_VALUE: {{ fti_value }}</h6>
+ {% include pointer.html%}
 
+<h6>FTI_VALUE: {{ fti_value }} <br> {{pointer}}</h6>
 
-{% if fti_value > 0 and fti_value < 50 %}
-  {% assign current = 'fail' %}
-	{% assign pointer = ((fti_value * 0.31)+ 5.5) %}
-	<h1 class="pointer">{{pointer}}</h1>
-{% elsif fti_value >= 50  and fti_value < 300 %}
-  {% assign current = 'alarm' %}
-	{% assign pointer = (((fti_value - 50) * 0.072)+ 21) %}
-	<h1 class="pointer">{{pointer}}</h1>
-{% elsif fti_value >= 300  and fti_value < 600 %}
-  {% assign current = 'danger' %}
-	{% assign pointer = (((fti_value - 300)* 0.05666)+ 39) %}
-	<h1 class="pointer">{{pointer}}</h1>
-{% elsif fti_value >= 600  and fti_value < 800 %}
-  {% assign current = 'caution' %}
-	{% assign pointer = (((fti_value - 600)* 0.09)+ 56) %}
-	<h1 class="pointer">{{pointer}}</h1>
-{% elsif fti_value >= 800  and fti_value <= 1000 %}
-  {% assign current = 'healthy' %}
-	{% assign pointer = (((fti_value - 800) * 0.09)+ 77) %}
-	<h1 class="pointer">{{pointer}}</h1>
-{% else %}
- {% assign current = 'nada' %}
-{% endif %}
-
-
-
+<style media="screen">
+.index-number-current {
+	text-align: center;
+	color: black;
+	position: absolute;
+	bottom: {{pointer | append: "%"}};
+	left: 3.2em;
+	height: 10px;
+	width: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both; }
+</style>
 
 
 		<section class="freedom-index ">
       {% for object in page.levels %}
         {% if  object.name == current %}
           <div class="index-level index-level-{{ object.name }}  index-level-current ">
-						<h1>{{pointer}}</h1>
           {% else %}
           <div class="index-level index-level-{{ object.name }}">
         {% endif %}
