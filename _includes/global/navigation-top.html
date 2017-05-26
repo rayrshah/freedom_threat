@@ -1,3 +1,11 @@
-<nav>
-Menu
+<!-- START NAV -->
+<nav class="main">
+  <ul>
+    {% for item in site.data.navigation-links %}
+    <li>
+        <a href="{{ item.url }}"  alt="{{ item.title }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </nav>
+<!-- END NAV -->

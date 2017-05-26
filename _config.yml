@@ -23,9 +23,9 @@ incremental: false
 timezone: Etc/GMT
 #baseurl:
 gems:
-  - jekyll-admin
+#  - jekyll-admin
   - jekyll-seo-tag
-  - jekyll-sitemap
+#  - jekyll-sitemap
 
 sass:
     sass_dir: css/_sass-partials

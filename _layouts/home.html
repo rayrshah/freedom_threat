@@ -1,18 +1,26 @@
 ---
 layout: default
 ---
+
+
+ {% include pointer.html%}
+
+<!-- <h6>FTI_VALUE: {{ fti_value }} <br> {{pointer}}</h6> -->
+
 <section class="home-intro">
 		<h1 class="logotype">{{ page.title }}</h1>
 
 		<div class="editorial-intro">
 			<h1 class="editorial-title">{{ page.title }}</h1>
 			<p class="intro-copy">{{ content }}</p>
-		</div>
+			<div class="trending-tooltip">
+				<h2>The current number is {{fti_value}}</h2>
+				<p>This is (up/down) (XX) points since (last week)</p>
+			</div>
+	</div>
 
 
- {% include pointer.html%}
 
-<h6>FTI_VALUE: {{ fti_value }} <br> {{pointer}}</h6>
 
 <style media="screen">
 .index-number-current {
@@ -49,15 +57,9 @@ layout: default
       {% endfor %}
 
 
-			<!-- NOTES for RAY:
-				- Change class to index-number-down when trending down, changes arrow and animation
-				- Could use the data-index-number for current number? I didn't do anything with it yet
-			 -->
-			<div class="index-number-current index-number-down " data-index-number="{{fti_value}}">
-				<div class="trending-tooltip">
-					<h2>The current number is {{fti_value}}.</h2>
-					<p>This is (up/down) (XX) points since (last week).</p>
-				</div>
+
+
+			<div class="index-number-current index-number-down" data-index-number="{{fti_value}}">
 			</div>
 		</section>
 
