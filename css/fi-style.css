@@ -281,7 +281,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "ff-good-headline-web-pro-con";
-  font-weight: 500; }
+  font-weight: 500;
+  visibility: visible; }
+
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading h5, .wf-loading h6 {
+  visibility: hidden; }
 
 p, li {
   font-size: 1.1em;
