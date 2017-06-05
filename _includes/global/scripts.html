@@ -1,0 +1,70 @@
+
+ <!-- 2 -->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+
+      data.addColumn('date', 'Date');
+      data.addColumn('number', 'Index Score');
+
+      data.addRows([
+      [new Date(2017, 2, 1), 428 ],
+      [new Date(2017, 2, 14), 328 ],
+      [new Date(2017, 3, 1), 442 ],
+      [new Date(2017, 3, 15), 455 ],
+      [new Date(2017, 4, 1), 455 ],
+      [new Date(2017, 4, 16), 452],
+      [new Date(2017, 5, 1), 501]
+    ]);
+
+
+      var options = {
+        backgroundColor: 'transparent',
+        legend: { position: 'none' },
+        lineWidth: 10,
+        colors:['#fff'],
+        dataOpacity: .5,
+        fontName: "Inconsolata",
+        chartArea:{width:'90%'},
+        animation: {"startup": true},
+        pointSize: 30,
+        vAxis: {
+            gridlines: {
+                color: 'transparent',
+
+            },
+            textStyle: {
+              color: "white",
+             },
+
+        },
+        hAxis: {
+            gridlines: {
+                color: 'transparent'
+            },
+            textStyle: {
+              color: "white",
+             },
+        }
+
+      };
+
+
+         function resize () {
+			  var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+			  chart.draw(data, options);
+			}
+
+          window.onload = resize();
+          window.onresize = resize;
+
+
+      }
+</script>
