@@ -1,0 +1,50 @@
+.row {
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 2em 2em ;
+}
+.home-intro {
+	padding: 1em;
+	min-height: 80vh;
+	
+	max-width: 1300px;
+	margin: 0 auto 2em;
+	@media only screen and (min-width: 700px) {
+		padding: 3em;
+	}
+
+	.editorial-intro,
+	.freedom-index {
+		
+		vertical-align: top;
+
+	}
+	.editorial-intro {
+			
+		@media only screen and (min-width: 700px) {
+		    	width: 40%;
+		    	float: left;
+		 }
+
+	}	
+	.freedom-index {
+		width: auto;
+		margin: 0 auto;
+		
+		@media only screen and (min-width: 700px) {
+				float: left;
+		    	width: 30%;
+		    	float: right;
+		    	
+		 }
+	}
+
+	
+
+}
+
+.chart-wrap {
+	max-width: 1300px;
+	margin: 0 auto 2em;
+}
+

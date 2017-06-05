@@ -48,6 +48,11 @@
     line-height: 1.3em;
     text-shadow: none !important;
 }
+
+.tl-timeline a,
+.tl-slide.tl-full-color-background a {
+       text-shadow: none !important;
+}
 .tl-timeline ul {
     font-family: 'Droid Sans', sans-serif
 }

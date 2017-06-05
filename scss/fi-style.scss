@@ -1,0 +1,23 @@
+// This file concatenates all SCSS stuff
+
+
+	
+
+	// Resets
+	@import 'global/reset';
+
+	// Basic type and color variables
+	@import 'theme/variables';
+	@import 'theme/typography';
+
+	// Button/Nav elements styles
+	@import 'theme/buttons';
+	//@import 'navigation';
+	
+	
+	// Layout and Block Patterns
+	@import 'theme/page-layout';
+	@import 'modules/page-modules';
+
+		// The Index
+		@import 'modules/freedom-index';
