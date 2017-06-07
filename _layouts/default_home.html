@@ -1,0 +1,17 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html class="no-js wf-ffgoodheadlinewebprocon-n9-active wf-ffgoodheadlinewebprocon-i9-active wf-ffgoodheadlinewebprocon-n4-active wf-ffgoodheadlinewebprocon-i4-active wf-ffgoodheadlinewebprocon-n5-active wf-ffgoodheadlinewebprocon-i5-active wf-active" lang="en">
+    {% include global/head.html %}
+  <body class="w-100 sans-serif bg-white {% if page.class %} {{ page.class }} {% endif %} {{ page.layout }} {{ jekyll.environment }}">
+
+    {% include global/navigation-top.html %}
+    <main role="main">
+      {{ content }}
+    </main>
+    {% include global/timeline.html %}
+    {% include global/footer.html %}
+    {% include global/scripts.html %}
+  </body>
+</html>

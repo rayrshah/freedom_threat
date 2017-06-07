@@ -1,7 +1,10 @@
 /* SITE BY */
-Name: The New Dynamic, https://www.thenewdynamic.org
+Name: US Freedom Index, https://usfreedomindex.org
 
 /* TEAM */
 Role: Developer
-Name: Bud Parr
-Site: https://www.thenewdynamic.org/about/
+Name: Ray Shah
+Site: https://ray.thinkdesign.com
+
+Role: Designer
+Name: Erin Allen
