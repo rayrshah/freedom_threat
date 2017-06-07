@@ -3,10 +3,10 @@
 # but you can also use them anywhere in your site, like this: {{ site.title }} or {{ site.twitter.username }}
 title: "Threat to Freedom Index"
 description: "An Objective Measure of Democracy"
-url: "https://budparr.github.io/jekyll-starter/" # the base hostname & protocol for your site
-author: [Ray Shah]
+url: "https://usfreedomindex.org/" # the base hostname & protocol for your site
+author:
 twitter:
-  username: rayshah
+  username:
 facebook:
   app_id:
   publisher:
