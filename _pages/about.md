@@ -2,14 +2,13 @@
 title: About
 layout: page
 ---
-'Stupid things!' Alice began in a loud, indignant voice, but she stopped  hastily, for the White Rabbit cried out, 'Silence in the court!' and the  King put on his spectacles and looked anxiously round, to make out who  was talking.
+Thursday, June 8, 2017
 
-Alice could see, as well as if she were looking over their shoulders,  that all the jurors were writing down 'stupid things!' on their slates,  and she could even make out that one of them didn't know how to spell  'stupid,' and that he had to ask his neighbour to tell him. 'A nice  muddle their slates'll be in before the trial's over!' thought Alice.
+The Threat to Freedom Index gauges the health of Democracy in the US.  We monitor over sixty vital signs across nine categories to estimate how near or far we are from authoritarianism and publish the score here weekly.
 
-One of the **jurors** had a pencil that squeaked. This of course, Alice  could not stand, and she went round the court and got behind him, and  very soon found an opportunity of taking it away. She did it so quickly  that the poor little juror (it was Bill, the Lizard) could not make out  at all what had become of it; so, after hunting all about for it, he was  obliged to write with one finger for the rest of the day; and this was  of very little use, as it left no mark on the slate.
 
-'Herald, read the accusation!' said the King.
+ABOUT
 
-On this the White Rabbit blew three blasts on the trumpet, and then  unrolled the parchment scroll, and read as follows:–
+This is the Beta version of the Freedom Index.  We are currently in search of seed money to make this a valuable and enduring tool for benchmarking democracy.  Funding at this crucial point will help us build our monitoring teams, create a communications team, and fund technical support and data transmission.  If you are interested in supporting this project, please reach out to us at:
 
-'The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!'
+<info@usfreedomindex.org>
