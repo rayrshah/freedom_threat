@@ -1,6 +1,6 @@
-{% assign input_classes = 'b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'  %}
+{% assign input_classes = 'b pa2 input-reset ba bg-transparent hover-bg-gray hover-white w-100'  %}
 
-<form class="measure" accept-charset="UTF-8" action="" method="POST">
+<form class="measure" accept-charset="UTF-8" action="https://formspree.io/rayshah@thinkdesign.com" method="POST">
   <input type="hidden" name="utf8" value="✓">
   <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
 
@@ -16,7 +16,11 @@
       <label class="db fw6 lh-copy f6" for="email-address">Email</label>
       <input class="{{ input_classes }}" type="email" name="email-address"  id="email-address">
     </div>
-
+    <div class="mt3">
+      <label class="db fw6 lh-copy f6" for="email-address">Message</label>
+      <input class="{{ input_classes }}" type="textarea" name="message"  id="message">
+    </div>
+    <input type="hidden" name="_next" value="/thanks" />
 
   </fieldset>
 
@@ -25,7 +29,6 @@
   </div>
 
   <div class="lh-copy mt3">
-
 
   </div>
 </form>
