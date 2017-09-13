@@ -3,8 +3,6 @@ pages:
 - _staff/ben-smith.md
 - _staff/dan-wolf.md
 - _staff/christopher-marlin.md
-- _staff/richard-markens.md
-- _staff/nick-astor.md
 hide_body: false
 fields:
 - name: title
