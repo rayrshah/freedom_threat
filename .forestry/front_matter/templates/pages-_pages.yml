@@ -1,0 +1,28 @@
+---
+pages:
+- _pages/why.md
+- _pages/thanks.md
+- _pages/about.md
+- _pages/contact.md
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: include
+  label: Include
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: page
+- name: permalink
+  label: Permalink
+  type: text
+  hidden: false
+  default: "/:basename/"
